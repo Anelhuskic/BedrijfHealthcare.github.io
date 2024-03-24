@@ -2,7 +2,7 @@ ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    background-color: #3381ffc2; /* Blauwe achtergrondkleur met lichte transparantie */
+    background-color: #3381ffa5; /* Blauwe achtergrondkleur met lichte transparantie */
     position: fixed; /* Menu vast bovenaan de pagina */
     top: 0; /* Plaats het menu helemaal bovenaan */
     width: auto; /* Breedte van het menu wordt automatisch aangepast aan de breedte van de inhoud */
