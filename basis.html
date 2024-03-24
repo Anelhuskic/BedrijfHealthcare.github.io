@@ -4,9 +4,7 @@
     <!-- Definieer de tekenset van het document als UTF-8 -->
     <meta charset="utf-8">
     <!-- De titel die in de browserbalk wordt weergegeven -->
-    <title>Healthcare</title>
-    <!-- Koppeling naar een extern CSS-bestand genaamd "opmaak.css" -->
-    <link rel="stylesheet" type="text/css" href="opmaak.css">
+    <title>Basismodel Healthcare</title>
     <!-- Begin van de interne CSS-stijlen voor de pagina -->
     <style>
         /* Achtergrondkleur van de pagina instellen */
@@ -52,6 +50,36 @@
         a {
             font-size: 18px;
         }
+
+        /* Stijl voor de knoppen */
+        .button {
+            display: block;
+            width: 100px;
+            margin: 10px auto;
+            padding: 10px;
+            text-align: center;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Stijl voor de rode knop */
+        .red {
+            background-color: red;
+            color: white;
+        }
+
+        /* Stijl voor de groene knop */
+        .green {
+            background-color: green;
+            color: white;
+        }
+
+        /* Stijl voor de blauwe knop */
+        .blue {
+            background-color: blue;
+            color: white;
+        }
     </style>
     <!-- Einde van de interne CSS-stijlen -->
 </head>
@@ -64,18 +92,16 @@
     <!-- Eerste alinea (p) -->
     <p>
         Je hebt zojuist op het basismodel geklikt. Deze bevat het kern van ons product. 
-<!-- Navigatiemenu met koppelingen naar andere pagina's -->
-<ul class="nav menu">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="Overons.html">Over ons</a></li>
-    <li><a href="Healthcarekopen.html">Healthcare kopen</a></li>
-    <li><a href="Afrekenen.html">Afrekenen</a></li>
-    <li><a href="basis.html">Basis</a></li>
-    <li><a href="geavanceerd.html">Geavanceerd</a></li>
-</ul>
+        Selecteer hieronder welke kleur je Healthcare product zal bevatten.
+    </p>
 
-<!-- Knop voor het afrekenen -->
-<a href="Afrekenen.html"><button>Afrekenen</button></a>
+    <!-- Knoppen voor het selecteren van de kleur -->
+    <button class="button red" onclick="window.location.href='Healthcarekopen.html'">Rood</button>
+    <button class="button green" onclick="window.location.href='Healthcarekopen.html'">Groen</button>
+    <button class="button blue" onclick="window.location.href='Healthcarekopen.html'">Blauw</button>
+
+    <!-- Knop voor het afrekenen -->
+    <button class="button" onclick="window.location.href='Afrekenen.html'">Afrekenen</button>
 
     <!-- Afbeelding (img) -->
     <img src="overons.jpg" alt="nog niet af">
