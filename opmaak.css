@@ -2,10 +2,24 @@ ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
-    background-color: #1565e6; /* Blauwe achtergrondkleur met lichte transparantie */
+    background-color: #3381ffc2; /* Blauwe achtergrondkleur met lichte transparantie */
     position: fixed; /* Menu vast bovenaan de pagina */
     top: 0; /* Plaats het menu helemaal bovenaan */
-    width: 100%; /* Breedte van het menu */
+    width: auto; /* Breedte van het menu wordt automatisch aangepast aan de breedte van de inhoud */
     z-index: 2; /* Zorgt ervoor dat het menu boven andere elementen wordt weergegeven */
 }
+
+li {
+    display: inline-block; /* Weergeven als inline blok */
+    width: 150px; /* Breedte van elk menu-item */
+    text-align: center; /* Center uitlijning van de tekst */
+}
+
+a {
+    display: block; /* Maak koppelingselementen blokelementen */
+    padding: 10px; /* Binnenste vulling van koppelingsitems */
+    text-decoration: none; /* Verwijder standaard koppelingsstijlen */
+    color: white; /* Tekstkleur */
+}
+
+
