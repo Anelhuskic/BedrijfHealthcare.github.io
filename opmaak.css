@@ -1,25 +1,35 @@
+
+/* Stijlen voor het navigatiemenu */
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    background-color: #3381ffa5; /* Blauwe achtergrondkleur met lichte transparantie */
+    overflow: hidden;
+    background-color: rgba(64, 121, 243, 0.797); /* Blauwe achtergrondkleur met lichte transparantie */
     position: fixed; /* Menu vast bovenaan de pagina */
     top: 0; /* Plaats het menu helemaal bovenaan */
-    width: auto; /* Breedte van het menu wordt automatisch aangepast aan de breedte van de inhoud */
+    width: 100%; /* Breedte van het menu */
     z-index: 2; /* Zorgt ervoor dat het menu boven andere elementen wordt weergegeven */
 }
 
 li {
-    display: inline-block; /* Weergeven als inline blok */
-    width: 150px; /* Breedte van elk menu-item */
-    text-align: center; /* Center uitlijning van de tekst */
+    float: left; /* Lijstitems naast elkaar plaatsen */
+    border-right: 1px solid #bbb; /* Rechterrand tussen menu-items */
 }
 
-a {
-    display: block; /* Maak koppelingselementen blokelementen */
-    padding: 10px; /* Binnenste vulling van koppelingsitems */
-    text-decoration: none; /* Verwijder standaard koppelingsstijlen */
-    color: white; /* Tekstkleur */
+li:last-child {
+    border-right: none; /* Geen rechterrand voor het laatste menu-item */
 }
+
+li a {
+    display: block;
+    color: white; /* Witte tekstkleur */
+    text-align: center;
+    padding: 14px 16px; /* Ruimte binnenin menu-items */
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: rgba(64, 121, 243, 0.797); /* Rode achtergrondkleur bij hover */
 
 
