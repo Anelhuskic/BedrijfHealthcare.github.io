@@ -32,8 +32,11 @@ li a:hover:not(.active) {
     background-color: rgba(64, 121, 243, 0.797); /* Rode achtergrondkleur bij hover */
 }
 
-/* Stijlen voor de titels van de pagina's */
+
+/* Stijl voor de titel van de website */
 h1 {
-    margin-top: 50px; /* Plaats de titel onder de navigatiebalk */
-    text-align: center; /* Centreer de titel */
+    color: white;
+    text-align: center;
+    margin-top: 50px; /* Ruimte boven de titel om plaats te maken voor het menu */
+
 }
