@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -53,6 +52,20 @@
         a {
             font-size: 18px;
         }
+
+        /* Stijl voor de knoppen */
+        .button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+        .button:hover {
+            background-color: #45a049;
+        }
     </style>
     <!-- Einde van de interne CSS-stijlen -->
 </head>
@@ -65,16 +78,19 @@
     <!-- Eerste alinea (p) -->
     <p> Ontdek onze nieuwste innovatie! Hier vind je ons volledige assortiment aan gezondheidsscanners, ontworpen om jou te helpen je gezondheid te monitoren en te verbeteren. Kies het model (basis of geavenceerd) dat bij jou past en investeer vandaag nog in je welzijn.</p>
         
+    <!-- Knoppen voor het selecteren van het type scanner -->
+    <div class="button-container">
+        <button class="button" id="basic-button">Basis</button>
+        <button class="button" id="advanced-button">Geavanceerd</button>
+    </div>
    
-<!-- Navigatiemenu met koppelingen naar andere pagina's -->
-<ul class="nav menu">
-    <li><a href="homepage.html">Home</a></li>
-    <li><a href="Overons.html">Over ons</a></li>
-    <li><a href="Healthcarekopen.html">Healthcare kopen</a></li>
-    <li><a href="Afrekenen.html">Afrekenen</a></li>
-
-</ul>
-
+    <!-- Navigatiemenu met koppelingen naar andere pagina's -->
+    <ul class="nav menu">
+        <li><a href="homepage.html">Home</a></li>
+        <li><a href="Overons.html">Over ons</a></li>
+        <li><a href="Healthcarekopen.html">Healthcare kopen</a></li>
+        <li><a href="Afrekenen.html">Afrekenen</a></li>
+    </ul>
 
     <!-- Afbeelding (img) -->
     <img src="healthcare!.png" alt="nog niet af">
@@ -86,5 +102,19 @@
             <p>© 2024 Healthcare - Alle rechten voorbehouden.</p>  
         </div>
     </footer>
+
+    <!-- JavaScript voor het toevoegen van functionaliteit aan de knoppen -->
+    <script>
+        document.getElementById("basic-button").addEventListener("click", function() {
+            // Code voor het selecteren van de basis scanner
+            console.log("Basis scanner geselecteerd");
+        });
+
+        document.getElementById("advanced-button").addEventListener("click", function() {
+            // Code voor het selecteren van de geavanceerde scanner
+            console.log("Geavanceerde scanner geselecteerd");
+        });
+    </script>
 </body>
 </html>
+
