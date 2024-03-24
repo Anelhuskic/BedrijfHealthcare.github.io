@@ -3,7 +3,7 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #104fb4; /* Blauwe achtergrondkleur met lichte transparantie */
+    background-color: #1565e6; /* Blauwe achtergrondkleur met lichte transparantie */
     position: fixed; /* Menu vast bovenaan de pagina */
     top: 0; /* Plaats het menu helemaal bovenaan */
     width: 100%; /* Breedte van het menu */
