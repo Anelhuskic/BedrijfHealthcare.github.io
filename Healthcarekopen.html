@@ -62,6 +62,7 @@
             cursor: pointer;
             border-radius: 5px;
             margin-right: 10px;
+            text-decoration: none; /* Om de standaard onderstreping van links te verwijderen */
         }
         .button:hover {
             background-color: #104fb4;
@@ -71,11 +72,12 @@
 </head>
 <body>
 
-     <!-- Navigatiemenu met koppelingen naar andere pagina's -->
-     <ul class="nav menu">
+    <!-- Navigatiemenu met koppelingen naar andere pagina's -->
+    <ul class="nav menu">
         <li><a href="index.html">Home</a></li>
         <li><a href="Overons.html">Over ons</a></li>
         <li><a href="Healthcarekopen.html">Healthcare kopen</a></li>
+    </ul>
 
     <!-- Hoofdkop (h1) voor de pagina -->
     <h1>Healthcare kopen</h1>
@@ -87,12 +89,10 @@
         
     <!-- Knoppen voor het selecteren van het type scanner -->
     <div class="button-container">
-        <button class="button" id="basic-button">Basis</button>
-        <button class="button" id="advanced-button">Geavanceerd</button>
+        <a href="basis.html" class="button">Basis</a>
+        <a href="geavanceerd.html" class="button">Geavanceerd</a>
     </div>
    
-    </ul>
-
     <!-- Afbeelding (img) -->
     <img src="scanner.jpg" alt="nog niet af">
 
@@ -104,18 +104,7 @@
         </div>
     </footer>
 
-    <!-- JavaScript voor het toevoegen van functionaliteit aan de knoppen -->
-    <script>
-        document.getElementById("basic-button").addEventListener("click", function() {
-            // Code voor het selecteren van de basis scanner
-            console.log("Basis scanner geselecteerd");
-        });
-
-        document.getElementById("advanced-button").addEventListener("click", function() {
-            // Code voor het selecteren van de geavanceerde scanner
-            console.log("Geavanceerde scanner geselecteerd");
-        });
-    </script>
 </body>
 </html>
+
 
